@@ -4,6 +4,7 @@
     "description": "Algorithm in Js",
     "main": "index.js",
     "scripts": {
+        "start": "npm run test",
         "test": "jest -o",
         "test:all": "jest",
         "git": "git add -A && git commit -m 'update' && git push"

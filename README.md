@@ -14,3 +14,14 @@ Algorithm in JavaScript
 - [ ] [排序|查找]()
 - [ ] [动态规划]()
 - [ ] [贪心算法]()
+
+Run test
+---
+
+```bash
+git clone git@github.com:x-bao/algorithm-js.git && cd algorithm-js
+
+npm install
+
+npm run test:all
+```

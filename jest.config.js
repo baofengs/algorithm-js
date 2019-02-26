@@ -1,5 +1,5 @@
 module.exports = {
+    resetModules: true,
     verbose: true,
-    bail: true,
-    resetModules: true
+    bail: true
 };
