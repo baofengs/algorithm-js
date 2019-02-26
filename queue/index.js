@@ -2,11 +2,11 @@ function Queue () {
     this.items = []
 }
 
-Queue.prototype.shift = function () {
+Queue.prototype.dequeue = function () {
     return this.items.shift();
 };
 
-Queue.prototype.push = function (item) {
+Queue.prototype.enqueue = function (item) {
     return this.items.push(item);
 };
 

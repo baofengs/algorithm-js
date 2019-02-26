@@ -2,8 +2,8 @@ import Queue from '../../queue/index';
 
 let queue = new Queue;
 
-test('push 3 into queue', () => {
-    queue.push(1);
+test('enqueue 3 into queue', () => {
+    queue.enqueue(1);
     const length = queue.items.length;
     expect(length).toBe(1);
     expect(queue.items[length - 1]).toBe(1);
@@ -16,11 +16,11 @@ test('empty queue', () => {
     expect(queue.items).not.toContain(1);
 });
 
-describe('queue push & empty accepted: ', () => {
+describe('queue enqueue & empty accepted: ', () => {
     beforeEach(() => {
         queue = new Queue;
-        queue.push(1);
-        queue.push(2);
+        queue.enqueue(1);
+        queue.enqueue(2);
     });
 
     afterEach(() => {
@@ -28,9 +28,9 @@ describe('queue push & empty accepted: ', () => {
         queue = null;
     });
 
-    test('shift from queue', () => {
-        const shifted = queue.shift();
-        expect(shifted).toBe(1);
+    test('dequeue from queue', () => {
+        const dequeued = queue.dequeue();
+        expect(dequeued).toBe(1);
         expect(queue.items).toEqual([2]);
     });
 
