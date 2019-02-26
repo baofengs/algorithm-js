@@ -77,7 +77,7 @@ function isBalance (symbols) {
     const leftBrackets = '<{[(「';
     const rightBrackets = '>}])」';
     let matched = false;
-    let popValue;
+    let popedValue;
 
     const match = (lBracket, rBracket) => {
         return leftBrackets.indexOf(lBracket) === rightBrackets.indexOf(rBracket);
@@ -88,8 +88,8 @@ function isBalance (symbols) {
         if (leftBrackets.includes(current)) {
             stack.push(current);
         } else if (rightBrackets.includes(current)) {
-            popValue = stack.pop();
-            matched = match(popValue, current);
+            popedValue = stack.pop();
+            matched = match(popedValue, current);
         }
     }
 
