@@ -4,7 +4,8 @@
     "description": "Algorithm in Js",
     "main": "index.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "git": "git add -A && git commit -m 'update' && git push"
     },
     "keywords": ["algorighm", "JavaScript", "Data Structure", "jest"],
     "author": "San Baofeng",
