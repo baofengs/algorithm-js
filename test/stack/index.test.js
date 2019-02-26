@@ -18,7 +18,8 @@ test('push 3 into stack', () => {
 });
 
 test('pop from stack', () => {
-    stack.pop();
+    const popped = stack.pop();
+    expect(popped).toBe(2);
     expect(stack.items).toEqual([1]);
     expect(stack.items).not.toContain(2);
 });
