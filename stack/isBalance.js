@@ -2,25 +2,25 @@ import Stack from './index';
 
 function isBalance (symbols) {
     const stack = new Stack;
-    const left = '<{[(「';
-    const right = '>}])」';
+    const leftBrackets = '<{[(「';
+    const rightBrackets = '>}])」';
     let matched = false;
     let popValue;
 
-    const match = (leftBracket, rightBracket) => {
-        return left.indexOf(leftBracket) === right.indexOf(rightBracket);
+    const match = (lBracket, rBracket) => {
+        return leftBrackets.indexOf(lBracket) === rightBrackets.indexOf(rBracket);
     }
 
     for (let i = 0; i < symbols.length; i++) {
         const current = symbols[i];
-        if (left.includes(current)) {
+        if (leftBrackets.includes(current)) {
             stack.push(current);
-        } else if (right.includes(current)) {
+        } else if (rightBrackets.includes(current)) {
             popValue = stack.pop();
             matched = match(popValue, current);
         }
     }
-    
+
     stack.empty();
     return matched;
 }
