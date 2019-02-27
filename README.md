@@ -4,7 +4,7 @@ Algorithm in JavaScript
 数据结构与算法 - JavaScript 描述
 
 - [x] [栈](https://github.com/x-bao/algorithm-js/tree/master/stack)
-- [ ] [队列](#)
+- [x] [队列](https://github.com/x-bao/algorithm-js/tree/master/queue)
 - [ ] [链表](#)
 - [ ] [集合](#)
 - [ ] [字典](#)
